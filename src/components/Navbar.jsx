@@ -5,7 +5,9 @@ import logo from "../assets/images/logo.png";
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-md">
-      <img src={logo} className="logo" alt="John & Caitlin" />
+      <Link to="./">
+        <img src={logo} className="logo" alt="John & Caitlin" />
+      </Link>
       <button
         className="navbar-toggler"
         type="button"
