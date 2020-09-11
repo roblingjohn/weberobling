@@ -14,19 +14,19 @@ function App() {
       <Router>
         <Navbar />
         <Switch>
-          <Route path="./accomodations">
+          <Route path="/accomodations">
             <Accomodations />
           </Route>
-          <Route path="./photos">
+          <Route path="/photos">
             <Photos />
           </Route>
-          <Route path="./registry">
+          <Route path="/registry">
             <Registry />
           </Route>
-          <Route path="./weddingparty">
+          <Route path="/weddingparty">
             <WeddingParty />
           </Route>
-          <Route path="./">
+          <Route path="/">
             <Home />
           </Route>
         </Switch>
