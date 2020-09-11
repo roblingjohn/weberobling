@@ -46,3 +46,10 @@ a:hover, a:active {
   height: auto;
   margin: auto
 }
+
+.underConstruction {
+  background-color: red;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
