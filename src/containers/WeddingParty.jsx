@@ -20,10 +20,8 @@ const WeddingParty = () => {
           url="preethi"
           title="Bridesmaid"
         />
-      </div>
-      <div className="row">
         <PartyMember name="Alex King" url="alex" title="Groomsman" />
-        <PartyMember name="Sean David" url="sean" title="Bridesman" />
+        <PartyMember name="Sean Davis" url="sean" title="Bridesman" />
         <PartyMember
           name="Wes Brown"
           url="wes"
