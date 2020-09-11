@@ -10,7 +10,7 @@ body {
   width: 176px;
 }
 
-.navbar {
+.newNavbar {
   background-color: #0579a3;
   padding: 30px;
 }
@@ -52,4 +52,12 @@ a:hover, a:active {
   color: white;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.nav-link a:link, a:visited {
+  color: black
+}
+
+.nav-link a:hover, a:active {
+  color: white;
 }
