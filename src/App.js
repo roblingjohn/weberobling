@@ -7,10 +7,12 @@ import Accomodations from "./containers/Accomodations";
 import Photos from "./containers/Photos";
 import Registry from "./containers/Registry";
 import WeddingParty from "./containers/WeddingParty";
+import UnderConstruction from "./components/UnderConstruction";
 
 function App() {
   return (
     <div className="App">
+      <UnderConstruction />
       <Router>
         <Navbar />
         <Switch>
