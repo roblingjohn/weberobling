@@ -12,7 +12,8 @@ body {
 
 .newNavbar {
   background-color: #0579a3;
-  padding: 30px;
+  padding-right: 30px;
+  padding-left: 30px;
 }
 
 h1 {
@@ -34,17 +35,18 @@ a:visited {
   color: black;
 }
 
-a:hover, a:active {
+a:hover,
+a:active {
   color: white;
 }
 
 .partyImage {
   display: block;
-  max-width:200px;
-  max-height:200px;
+  max-width: 200px;
+  max-height: 200px;
   width: auto;
   height: auto;
-  margin: auto
+  margin: auto;
 }
 
 .underConstruction {
@@ -54,10 +56,20 @@ a:hover, a:active {
   padding-right: 20px;
 }
 
-.nav-link a:link, a:visited {
-  color: black
+a.navLink {
+  margin: 10px;
 }
 
-.nav-link a:hover, a:active {
+.navLink a:link,
+a:visited {
+  color: black;
+}
+
+.navLink a:hover,
+a:active {
   color: white;
+}
+
+.container {
+  margin-top: 10px;
 }

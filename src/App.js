@@ -3,7 +3,7 @@ import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
-import NewNavbar from "./components/NewNavbar"
+import NewNavbar from "./components/NewNavbar";
 import Accomodations from "./containers/Accomodations";
 import Photos from "./containers/Photos";
 import Registry from "./containers/Registry";
@@ -16,23 +16,25 @@ function App() {
       <UnderConstruction />
       <Router>
         <NewNavbar />
-        <Switch>
-          <Route path="/accomodations">
-            <Accomodations />
-          </Route>
-          <Route path="/photos">
-            <Photos />
-          </Route>
-          <Route path="/registry">
-            <Registry />
-          </Route>
-          <Route path="/weddingparty">
-            <WeddingParty />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch>
+        <div className="container">
+          <Switch>
+            <Route path="/accomodations">
+              <Accomodations />
+            </Route>
+            <Route path="/photos">
+              <Photos />
+            </Route>
+            <Route path="/registry">
+              <Registry />
+            </Route>
+            <Route path="/weddingparty">
+              <WeddingParty />
+            </Route>
+            <Route path="/">
+              <Home />
+            </Route>
+          </Switch>
+        </div>
       </Router>
     </div>
   );
