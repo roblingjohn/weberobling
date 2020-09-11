@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import { Navbar, Nav, NavDropdown, Button } from "react-bootstrap";
 import logo from "../assets/images/logo.png";
 
@@ -12,10 +13,8 @@ class NewNavbar extends Component {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link className="navlink" href="/">
-              Home
-            </Nav.Link>
-            <NavDropdown title="Wedding Weekend" id="basic-nav-dropdown">
+            <Link className="navLink" to="/">Home</Link>
+            <NavDropdown title="Wedding Weekend" id="basic-nav-dropdown" class="navLink">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
                 Another action
@@ -26,10 +25,10 @@ class NewNavbar extends Component {
                 Separated link
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="/weddingparty">Wedding Party</Nav.Link>
-            <Nav.Link href="/accomodations">Accomodations</Nav.Link>
-            <Nav.Link href="/photos">Photos</Nav.Link>
-            <Nav.Link href="/registry">Registry</Nav.Link>
+            <Link to="/weddingparty" className="navLink">Wedding Party</Link>
+            <Link to="/accomodations" className="navLink">Accomodations</Link>
+            <Link to="/photos" className="navLink">Photos</Link>
+            <Link to="/registry" className="navLink">Registry</Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
