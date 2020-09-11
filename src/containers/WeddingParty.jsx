@@ -1,11 +1,42 @@
-import React from 'react';
+import React from "react";
+import PartyMember from "../components/PartyMember";
 
 const WeddingParty = () => {
-    return (
-        <div>
-            <h1>This is the wedding party page.</h1>
-        </div>
-    );
+  return (
+    <div>
+      <h1>Wedding Party</h1>
+      <div className="row">
+        <PartyMember name="Jessica King" url="jking" title="Maid of Honor" />
+        <PartyMember name="Chet Wiseman" url="chet" title="Best Man" />
+        <PartyMember name="Kim Carrol" url="kim" title="Bridesmaid" />
+        <PartyMember name="Nate Ulrich" url="nate" title="Groomsman" />
+      </div>
+      <div className="row">
+        <PartyMember name="Jenny Robling" url="jenny" title="Groomswoman" />
+        <PartyMember name="Jessica Vance" url="vance" title="Bridesmaid" />
+        <PartyMember name="Jason Seidman" url="jason" title="Groomsman" />
+        <PartyMember
+          name="Preethi Sundararaman"
+          url="preethi"
+          title="Bridesmaid"
+        />
+      </div>
+      <div className="row">
+        <PartyMember name="Alex King" url="alex" title="Groomsman" />
+        <PartyMember name="Sean David" url="sean" title="Bridesman" />
+        <PartyMember
+          name="Wes Brown"
+          url="wes"
+          title="Groomsman (in memoriam)"
+        />
+      </div>
+      <div className="row">
+          <PartyMember name="Devon Tully" url="devon" title="Usher"/>
+          <PartyMember name="James Joslin" url="james" title="Usher"/>
+          <PartyMember name="Ravikash Saini" url="ravi" title="officiant"/>
+      </div>
+    </div>
+  );
 };
 
 export default WeddingParty;
