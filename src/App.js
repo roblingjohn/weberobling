@@ -3,6 +3,7 @@ import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
+import NewNavbar from "./components/NewNavbar"
 import Accomodations from "./containers/Accomodations";
 import Photos from "./containers/Photos";
 import Registry from "./containers/Registry";
@@ -14,7 +15,7 @@ function App() {
     <div className="App">
       <UnderConstruction />
       <Router>
-        <Navbar />
+        <NewNavbar />
         <Switch>
           <Route path="/accomodations">
             <Accomodations />
