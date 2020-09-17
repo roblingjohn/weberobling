@@ -4,4 +4,4 @@ In the time between the original date of my wedding and the first date we resche
 
 Please note that this site is only included as a demonstration of my coding ability. Viewing it here does not constitute an invitation to the wedding.
 
-[Deployed Site](https://weberobling.herokuapp.com/)
+[Deployed Site](https://weberobling.com/)
