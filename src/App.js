@@ -8,7 +8,6 @@ import Photos from "./containers/Photos";
 import Registry from "./containers/Registry";
 import WeddingParty from "./containers/WeddingParty";
 import UnderConstruction from "./components/UnderConstruction";
-import DummyNav from "./components/DummyNav";
 
 function App() {
   return (
