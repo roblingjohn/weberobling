@@ -31,7 +31,7 @@ const WeddingParty = () => {
       <div className="row">
           <PartyMember name="Devon Tully" url="devon" title="Usher"/>
           <PartyMember name="James Joslin" url="james" title="Usher"/>
-          <PartyMember name="Ravikash Saini" url="ravi" title="officiant"/>
+          <PartyMember name="Ravikash Saini" url="ravi" title="Officiant"/>
       </div>
     </div>
   );
