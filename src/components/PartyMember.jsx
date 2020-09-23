@@ -6,6 +6,7 @@ const PartyMember = (props) => {
       <img
         src={require(`../assets/images/weddingparty/${props.url}.jpg`)}
         className="partyImage"
+        alt={props.name}
       />
       {/* <p>{props.url}</p> */}
       <h5>{props.name}</h5>
