@@ -8,7 +8,9 @@ const HotelEntry = (props) => {
         src={require(`../assets/images/hotels/${props.img}.jpg`)}
         alt={props.hotelName}
       ></img>
-      <h2>{props.hotelName}</h2>
+      <h2>
+        <a href={props.url}>{props.hotelName}</a>
+      </h2>
       {props.hotelName === "Clermont Hotel" && <h4>(We are staying here)</h4>}
       <h5>{props.address1}</h5>
       <h5>{props.address2}</h5>
