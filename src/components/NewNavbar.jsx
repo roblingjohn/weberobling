@@ -13,22 +13,30 @@ class NewNavbar extends Component {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
-            <Link className="navLink" to="/">Home</Link>
-            <NavDropdown title="Wedding Weekend" id="basic-nav-dropdown" class="navLink">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
+            <Link className="navLink" to="/">
+              Home
+            </Link>
+            <NavDropdown
+              title="Wedding Weekend"
+              id="basic-nav-dropdown"
+              class="navLink"
+            >
+              <Link to="/venue" className="navLink">
+                Venue
+              </Link>
             </NavDropdown>
-            <Link to="/weddingparty" className="navLink">Wedding Party</Link>
-            <Link to="/accomodations" className="navLink">Accomodations</Link>
-            <Link to="/photos" className="navLink">Photos</Link>
-            <Link to="/registry" className="navLink">Registry</Link>
+            <Link to="/weddingparty" className="navLink">
+              Wedding Party
+            </Link>
+            <Link to="/accomodations" className="navLink">
+              Accomodations
+            </Link>
+            <Link to="/photos" className="navLink">
+              Photos
+            </Link>
+            <Link to="/registry" className="navLink">
+              Registry
+            </Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
