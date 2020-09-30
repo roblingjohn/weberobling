@@ -93,3 +93,15 @@ a:active {
 .hotelImg {
   max-width: 100%;
 }
+
+.venueImg {
+  width: 500px;
+  height: auto;
+  max-width: 100%;
+  border-color: #0579a3;
+  border-width: 5px;
+  border-style: solid;
+  padding: 2px;
+  margin: auto;
+  margin-bottom: 10px;
+}
