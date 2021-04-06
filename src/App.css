@@ -117,3 +117,10 @@ a:active {
   margin: auto;
   margin-bottom: 10px;
 }
+
+.photosPageImg {
+  display: block;
+  max-width: 350px;
+  margin: auto;
+  margin-bottom: 40px;
+}
