@@ -2,19 +2,15 @@ import React from "react";
 
 const Home = () => {
   return (
-    <div className='mainBox'>
-      <h1>
-        We’ve made the difficult decision to postpone (again) until September
-        25th, 2021.
-      </h1>
+    <div className="mainBox">
+      <h1>Third Time's the Charm! September 25th, 2021!</h1>
       <p>
-        In all instances, the health and safety of our family, friends, vendors,
-        and cats is our number one priority. We want to extend a giant thank you
-        to all of you for understanding. Please don’t hesitate to reach out to
-        us if you need anything to help move your reservations. In our
-        experience, airlines and hotels are being extremely accommodating during
-        this difficult time.{" "}
+        It's been a hard year having to postpone our wedding twice, but with
+        current trends, we feel confident that we will all be able to be
+        together on <strong>September 25, 2021</strong> and we will be doing
+        everything we can to make sure the long wait was worth it!
       </p>
+      <img src={require("../assets/images/home.jpg")} className="homeImg" />
     </div>
   );
 };

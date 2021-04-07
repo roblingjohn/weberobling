@@ -13,7 +13,6 @@ import Venue from './containers/Venue'
 function App() {
   return (
     <div className="App">
-      <UnderConstruction />
       <Router>
         <NewNavbar />
         <div className="container">
