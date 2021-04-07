@@ -120,7 +120,9 @@ a:active {
 
 .photosPageImg {
   display: block;
-  max-width: 350px;
+  width: 350px;
+  height: 350px;
   margin: auto;
   margin-bottom: 40px;
+  object-fit: cover;
 }
