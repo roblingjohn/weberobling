@@ -4,7 +4,7 @@ import PhotosPageImg from "../components/PhotosPageImg";
 const Photos = () => {
   let pictureNumberArray = [];
 
-  for (let i = 0; i < 18; i++) {
+  for (let i = 1; i < 44; i++) {
     pictureNumberArray.push(i);
     console.log(pictureNumberArray);
   }
