@@ -21,19 +21,17 @@ function App() {
   const [state, setState] = useState({
     fromPortfolio: false,
   });
-  useEffect(()=> {
+  useEffect(() => {
     if (window.location.href === "http://localhost:3000/?portfolio") {
-      setState({fromPortfolio: true})
+      setState({ fromPortfolio: true });
     }
     if (window.location.href === "http://www.weberobling.com/?portfolio") {
-      setState({fromPortfolio: true})
+      setState({ fromPortfolio: true });
     }
-  })
+  });
   return (
     <div className="App">
-      {state.fromPortfolio && (
-        <Portfolio />
-      )}
+      {state.fromPortfolio && <Portfolio />}
       <Router>
         <NewNavbar />
         <div className="container">
@@ -54,7 +52,7 @@ function App() {
               <Venue />
             </Route>
             <Route path="/rsvp">
-              <RSVP />
+              <RSVP fromPortfolio={state.fromPortfolio} />
             </Route>
             <Route path="/">
               <Home />
