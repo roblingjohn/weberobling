@@ -19,7 +19,7 @@ import Portfolio from "./components/Portfolio";
 
 function App() {
   const [state, setState] = useState({
-    fromPortfolio: true,
+    fromPortfolio: false,
   });
   useEffect(()=> {
     if (window.location.href === "http://localhost:3000/?portfolio") {
