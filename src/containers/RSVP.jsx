@@ -13,6 +13,10 @@ class RSVP extends Component {
     songRequest: "",
   };
 
+  componentDidMount() {
+    console.log(this.props);
+  }
+
   handleInputChange = (event) => {
     const value = event.target.value;
     const name = event.target.name;
@@ -31,7 +35,11 @@ class RSVP extends Component {
 
   handleSubmit = (event) => {
     event.preventDefault();
-    alert(`Attendee name: ${this.state.attendeeName}
+    if (this.props.fromPortfolio === true) {
+      alert(
+        "I did ask you not to RSVP. I appreciate you checking out the functionality, but I also don't want to muddy up the results with people testing out the mechanism for this. But since you're curious, here's the info that goes to the database."
+      );
+      alert(`Attendee name: ${this.state.attendeeName}
       Email: ${this.state.attendeeEmail}
       Can attend: ${this.state.canAttend}
       Has guest: ${this.state.hasGuest}
@@ -40,6 +48,19 @@ class RSVP extends Component {
       Food Selection 1: ${this.state.mainFoodSelection}
       Food Selection 2: ${this.state.guestFoodSelection}
       Song Request: ${this.state.songRequest}`);
+    }
+
+    if (this.props.fromPortfolio === false) {
+      alert(`Attendee name: ${this.state.attendeeName}
+      Email: ${this.state.attendeeEmail}
+      Can attend: ${this.state.canAttend}
+      Has guest: ${this.state.hasGuest}
+      Guest name: ${this.state.guestName}
+      Children: ${this.state.children}
+      Food Selection 1: ${this.state.mainFoodSelection}
+      Food Selection 2: ${this.state.guestFoodSelection}
+      Song Request: ${this.state.songRequest}`);
+    }
   };
 
   render() {
