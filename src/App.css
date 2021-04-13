@@ -126,3 +126,7 @@ a:active {
   margin-bottom: 40px;
   object-fit: cover;
 }
+
+.rsvp {
+  text-align: left;
+}
