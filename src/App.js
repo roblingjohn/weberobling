@@ -8,7 +8,8 @@ import Photos from "./containers/Photos";
 import Registry from "./containers/Registry";
 import WeddingParty from "./containers/WeddingParty";
 import UnderConstruction from "./components/UnderConstruction";
-import Venue from './containers/Venue'
+import Venue from "./containers/Venue";
+import RSVP from "./containers/RSVP";
 
 function App() {
   return (
@@ -31,6 +32,9 @@ function App() {
             </Route>
             <Route path="/venue">
               <Venue />
+            </Route>
+            <Route path="/rsvp">
+              <RSVP />
             </Route>
             <Route path="/">
               <Home />
