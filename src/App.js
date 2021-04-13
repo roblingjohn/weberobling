@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 import {
   BrowserRouter as Router,
@@ -17,10 +17,23 @@ import Venue from "./containers/Venue";
 import RSVP from "./containers/RSVP";
 import Portfolio from "./components/Portfolio";
 
-function App() {  
+function App() {
+  const [state, setState] = useState({
+    fromPortfolio: true,
+  });
+  useEffect(()=> {
+    if (window.location.href === "http://localhost:3000/?portfolio") {
+      setState({fromPortfolio: true})
+    }
+    if (window.location.href === "http://www.weberobling.com/?portfolio") {
+      setState({fromPortfolio: true})
+    }
+  })
   return (
     <div className="App">
-      {window.location.href === "http://weberobling.com/?portfolio" && (<Portfolio/>)}
+      {state.fromPortfolio && (
+        <Portfolio />
+      )}
       <Router>
         <NewNavbar />
         <div className="container">
