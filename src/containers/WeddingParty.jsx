@@ -8,7 +8,7 @@ const WeddingParty = () => {
       <div className="row">
         <PartyMember name="Jessica King" url="jking" title="Maid of Honor" />
         <PartyMember name="Chet Wiseman" url="chet" title="Best Man" />
-        <PartyMember name="Kim Carrol" url="kim" title="Bridesmaid" />
+        <PartyMember name="Kim Carroll" url="kim" title="Bridesmaid" />
         <PartyMember name="Nate Ulrich" url="nate" title="Groomsman" />
       </div>
       <div className="row">
