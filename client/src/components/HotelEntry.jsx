@@ -5,7 +5,7 @@ const HotelEntry = (props) => {
     <div className="col col-med-4">
       <img
         className="hotelImg"
-        src={require(`../assets/images/hotels/${props.img}.jpg`)}
+        src={require(`../assets/images/hotels/${props.img}.jpg`).default}
         alt={props.hotelName}
       ></img>
       <h2>

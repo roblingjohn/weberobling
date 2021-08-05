@@ -10,7 +10,10 @@ const Home = () => {
         together on <strong>September 25, 2021</strong> and we will be doing
         everything we can to make sure the long wait was worth it!
       </p>
-      <img src={require("../assets/images/home.jpg")} className="homeImg" />
+      <img
+        src={require("../assets/images/home.jpg").default}
+        className="homeImg"
+      />
     </div>
   );
 };
