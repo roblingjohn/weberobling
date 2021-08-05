@@ -34,6 +34,9 @@ class NewNavbar extends Component {
             <Link to="/photos" className="navLink">
               Photos
             </Link>
+            <Link to="/rsvp" className="navLink">
+              RSVP
+            </Link>
             <Link to="/registry" className="navLink">
               Registry
             </Link>

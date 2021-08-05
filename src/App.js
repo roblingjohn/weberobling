@@ -12,26 +12,30 @@ import Accomodations from "./containers/Accomodations";
 import Photos from "./containers/Photos";
 import Registry from "./containers/Registry";
 import WeddingParty from "./containers/WeddingParty";
-import UnderConstruction from "./components/UnderConstruction";
 import Venue from "./containers/Venue";
 import RSVP from "./containers/RSVP";
 import Portfolio from "./components/Portfolio";
 
 function App() {
-  const [state, setState] = useState({
-    fromPortfolio: false,
-  });
+  // const [state, setState] = useState({
+  //   fromPortfolio: false,
+  // });
+  let fromPortfolio = localStorage.getItem("fromPortfolio") || false;
   useEffect(() => {
-    if (window.location.href === "http://localhost:3000/?portfolio") {
-      setState({ fromPortfolio: true });
-    }
-    if (window.location.href === "http://www.weberobling.com/?portfolio") {
-      setState({ fromPortfolio: true });
-    }
+    // fromPortfolio = localStorage.getItem("fromPortfolio");
+    if (
+      window.location.href === "http://localhost:3000/?portfolio" ||
+      window.location.href === "http://www.weberobling.com/?portfolio"
+    ) {
+      localStorage.setItem("fromPortfolio", true);
+    } 
+    // else localStorage.setItem("fromPortfolio", false);
+    console.log(fromPortfolio);
   });
+
   return (
     <div className="App">
-      {state.fromPortfolio && <Portfolio />}
+      {fromPortfolio && <Portfolio />}
       <Router>
         <NewNavbar />
         <div className="container">
@@ -52,7 +56,7 @@ function App() {
               <Venue />
             </Route>
             <Route path="/rsvp">
-              <RSVP fromPortfolio={state.fromPortfolio} />
+              <RSVP fromPortfolio={fromPortfolio} />
             </Route>
             <Route path="/">
               <Home />
