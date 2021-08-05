@@ -30,7 +30,6 @@ function App() {
       localStorage.setItem("fromPortfolio", true);
     } 
     // else localStorage.setItem("fromPortfolio", false);
-    console.log(fromPortfolio);
   });
 
   return (
