@@ -55,7 +55,7 @@ function App() {
             <Route path="/venue">
               <Venue />
             </Route>
-            <Route path="/rehearsaldinner">
+            <Route path="/welcomeparty">
               <RehearsalDinner />
             </Route>
             <Route path="/rsvp">
