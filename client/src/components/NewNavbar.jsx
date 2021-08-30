@@ -21,9 +21,12 @@ class NewNavbar extends Component {
               id="basic-nav-dropdown"
               class="navLink"
             >
-              <Link to="/venue" className="navLink">
+              <NavDropdown.Item href="/venue" className="navLink">
                 Venue
-              </Link>
+              </NavDropdown.Item>
+              <NavDropdown.Item href="/rehearsaldinner" className="navLink">
+                Rehearsal Dinner
+              </NavDropdown.Item>
             </NavDropdown>
             <Link to="/weddingparty" className="navLink">
               Wedding Party
@@ -34,6 +37,9 @@ class NewNavbar extends Component {
             <Link to="/photos" className="navLink">
               Photos
             </Link>
+            {/* <Link to="/rsvp" className="navLink">
+              RSVP
+            </Link> */}
             <Link to="/registry" className="navLink">
               Registry
             </Link>
