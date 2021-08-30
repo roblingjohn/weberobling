@@ -15,6 +15,7 @@ import WeddingParty from "./containers/WeddingParty";
 import Venue from "./containers/Venue";
 import RSVP from "./containers/RSVP";
 import Portfolio from "./components/Portfolio";
+import RehearsalDinner from "./containers/RehearsalDinner"
 
 function App() {
   // const [state, setState] = useState({
@@ -53,6 +54,9 @@ function App() {
             </Route>
             <Route path="/venue">
               <Venue />
+            </Route>
+            <Route path="/rehearsaldinner">
+              <RehearsalDinner />
             </Route>
             <Route path="/rsvp">
               <RSVP fromPortfolio={fromPortfolio} />
