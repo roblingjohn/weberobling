@@ -10,7 +10,7 @@ const Home = () => {
       </p>
       <p>Please RSVP by September 6.</p>
       <img
-        src={require("../assets/images/home.jpg").default}
+        src={require("../assets/images/home.jpg")}
         className="homeImg"
         title="We cute."
       />
