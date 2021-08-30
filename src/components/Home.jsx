@@ -5,12 +5,15 @@ const Home = () => {
     <div className="mainBox">
       <h1>Third Time's the Charm! September 25th, 2021!</h1>
       <p>
-        It's been a hard year having to postpone our wedding twice, but with
-        current trends, we feel confident that we will all be able to be
-        together on <strong>September 25, 2021</strong> and we will be doing
-        everything we can to make sure the long wait was worth it!
+        Yes, it is happening! We will be having our wedding on{" "}
+        <strong>September 25, 2021</strong>!
       </p>
-      <img src={require("../assets/images/home.jpg")} className="homeImg" />
+      <p>Please RSVP by September 6.</p>
+      <img
+        src={require("../assets/images/home.jpg").default}
+        className="homeImg"
+        title="We cute."
+      />
     </div>
   );
 };
