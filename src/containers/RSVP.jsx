@@ -11,13 +11,9 @@ class RSVP extends Component {
     mainFoodSelection: "",
     guestFoodSelection: "",
     songRequest: "",
-    fromPortfolio: false,
   };
 
   componentDidMount() {
-    if (this.props.fromPortfolio) {
-      this.setState({ fromPortfolio: true });
-    }
     console.log(this.props);
   }
 
@@ -39,9 +35,9 @@ class RSVP extends Component {
 
   handleSubmit = (event) => {
     event.preventDefault();
-    if (this.state.fromPortfolio === true) {
+    if (this.props.fromPortfolio === true) {
       alert(
-        "I did ask you not to RSVP. I appreciate you checking out the functionality, but I also don't want to muddy up the results with people testing out the mechanism for this. But since you're curious, the next alert has the info that goes to the database."
+        "I did ask you not to RSVP. I appreciate you checking out the functionality, but I also don't want to muddy up the results with people testing out the mechanism for this. But since you're curious, here's the info that goes to the database."
       );
       alert(`Attendee name: ${this.state.attendeeName}
       Email: ${this.state.attendeeEmail}

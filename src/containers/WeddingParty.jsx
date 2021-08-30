@@ -22,7 +22,6 @@ const WeddingParty = () => {
         />
         <PartyMember name="Alex King" url="alex" title="Groomsman" />
         <PartyMember name="Sean Davis" url="sean" title="Bridesman" />
-        <PartyMember name="James Joslin" url="james" title="Groomsman" />
         <PartyMember
           name="Wes Brown"
           url="wes"
@@ -30,9 +29,9 @@ const WeddingParty = () => {
         />
       </div>
       <div className="row">
-        <PartyMember name="Devon Tully" url="devon" title="Usher" />
-        <PartyMember name="JJ Krehbiel" url="jj" title="Usher" />
-        <PartyMember name="Ravikash Saini" url="ravi" title="Officiant" />
+          <PartyMember name="Devon Tully" url="devon" title="Usher"/>
+          <PartyMember name="James Joslin" url="james" title="Usher"/>
+          <PartyMember name="Ravikash Saini" url="ravi" title="Officiant"/>
       </div>
     </div>
   );

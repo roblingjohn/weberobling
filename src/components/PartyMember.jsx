@@ -4,7 +4,7 @@ const PartyMember = (props) => {
   return (
     <div className="col col-md-3 partyMember">
       <img
-        src={require(`../assets/images/weddingparty/${props.url}.jpg`).default}
+        src={require(`../assets/images/weddingparty/${props.url}.jpg`)}
         className="partyImage"
         alt={props.name}
       />
