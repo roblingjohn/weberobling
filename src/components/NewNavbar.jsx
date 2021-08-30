@@ -24,7 +24,7 @@ class NewNavbar extends Component {
               <NavDropdown.Item href="/venue" className="navLink">
                 Venue
               </NavDropdown.Item>
-              <NavDropdown.Item href="/rehearsaldinner" className="navLink">
+              <NavDropdown.Item href="/welcomeparty" className="navLink">
                 Welcome Party
               </NavDropdown.Item>
             </NavDropdown>
