@@ -4,6 +4,9 @@ const Venue = () => {
   return (
     <div>
       <h1>La Maison Rouge</h1>
+      <h3>Ceremony begins promptly at 6:00 pm.</h3>
+      <h3>Dinner at 7.</h3>
+      <h3>Dancing until they kick us out.</h3>
       <img
         src={require("../assets/images/maisonrouge.jpg").default}
         alt="La Maison Rouge"
